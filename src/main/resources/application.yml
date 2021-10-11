@@ -1,0 +1,17 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: school
+      contact-points: 127.0.0.1
+      schema-action: CREATE_IF_NOT_EXISTS
+      port: 9042
+      local-datacenter: datacenter1
+
+server:
+  port: 8088
+
+application:
+  security:
+    authentication:
+      jwt:
+        jwtSecret: 09MaMBp56p2mhUxbYhPh5eJA5JmqZwe-9Y7q8Lwqyso
